@@ -1,0 +1,154 @@
+:root{
+    --body-color: #cff3c8ff;
+    --nav-color: #87c08f;
+    --hover-color: #47644b;
+}
+*{
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 1s;
+    cursor: pointer;
+    object-fit: cover;
+    text-align: center;
+}
+body{
+    background-image: url(./img-garden/folhitas.jpg);
+    width: auto;
+}
+.body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hover-color);
+    width: 800px;
+    box-shadow:  20px 20px 20px 20px
+}
+
+.header{ 
+    align-items: center;
+    background-color: #ffffff;
+    width: 800px;
+}
+.header img{
+    height: 150px;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav {
+    align-items: center;
+    text-transform: uppercase;
+    margin: 15px;
+    background-color: var(--nav-color);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a{
+    font-size: 23px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.home img{
+    width: 800px;
+}
+
+.article{
+    background-color: var(--hover-color);
+    display: flex;
+}
+
+.article img{
+    width: 266px;
+    flex-wrap: wrap;
+    
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: var(--nav-color);
+    display: block;
+    border: 20px;
+    margin-top: 15px;
+}
+
+.footer h2{
+    padding: 10px;
+    color: #ffffff;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.header img:hover{
+    transform: scale(1.2);
+    margin-bottom: 10px;
+}
+a:hover{
+    background-color: var(--hover-color);
+    padding: 30px;
+    transform: scale(1.2);
+}
+
+.home img:hover{
+    transform: scale(1.05);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.article img:hover{
+    transform: scale(1.05);
+    margin-left: 1px;
+    margin-right: 20px;
+}
+
+.footer:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:600px){
+
+    body{
+        background-image: none;
+        background-color: var(--hover-color);
+    }
+
+    .body{
+        box-shadow: none;
+    }
+    .home img{
+        margin: 0;
+        width: 600px;
+        height: 200px;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article img{
+        width: 600px;
+        height: 600px;
+        margin-bottom: 10px;
+    }
+
+    .header{
+        width: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer{
+        width: 600px;
+    }
+}
